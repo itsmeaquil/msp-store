@@ -588,7 +588,7 @@ export default function AdminDashboard() {
         </div>
 
         {/* Tab switcher */}
-        <div style={{ display: 'flex', gap: 8, marginBottom: 24 }}>
+        <div className="tab-scroll" style={{ marginBottom: 24 }}>
           <button
             className={`filter-tab ${activeTab === 'tickets' ? 'active' : ''}`}
             onClick={() => setActiveTab('tickets')}
@@ -893,7 +893,7 @@ export default function AdminDashboard() {
             </div>
 
             {/* Brand selector */}
-            <div style={{ display: 'flex', gap: 8, overflowX: 'auto', paddingBottom: 4, marginBottom: 20 }}>
+            <div className="tab-scroll" style={{ paddingBottom: 4, marginBottom: 20 }}>
               {BRANDS.map(b => (
                 <button
                   key={b.id}

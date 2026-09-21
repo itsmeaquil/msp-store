@@ -133,6 +133,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 body {
@@ -636,6 +637,14 @@ select.input {
 }
 
 /* ===== CATEGORY FILTER TABS ===== */
+.tab-scroll {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
 .filter-tab {
   padding: 8px 20px;
   border-radius: var(--radius-full);
