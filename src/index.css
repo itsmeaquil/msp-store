@@ -136,6 +136,16 @@ html {
   overflow-x: hidden;
 }
 
+/* Scale all rem-based text down on smaller screens, since every size in this
+   file is set in rem relative to this root size rather than per-breakpoint. */
+@media (max-width: 768px) {
+  html { font-size: 15px; }
+}
+
+@media (max-width: 480px) {
+  html { font-size: 14px; }
+}
+
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   background-color: var(--color-bg-primary);
